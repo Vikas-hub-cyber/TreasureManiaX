@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign Up</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="/css/signup.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .brand {
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      color: #2d2d2d;
+      text-shadow: 1px 1px #c9c9c9;
+    }
+
+    .wrapper {
+      width: 80%;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #aaa;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: block;
+      color: #2d2d2d;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=password] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0px 0px 5px #aaa;
+    }
+
+    button[type=submit] {
+      background-color: #2d2d2d;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button[type=submit]:hover {
+      background-color: #1a1a1a;
+    }
+
+    a {
+      color: #2d2d2d;
+      text-decoration: none;
+    }
+
+    .full {
+      width: 100%;
+    }
+
+    .alert {
+      background-color: #90EE90;
+      color: #2d2d2d;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px #aaa;
+    }
+
+    @media screen and (max-width: 768px) {
+      .wrapper {
+        width: 90%;
+        padding: 20px;
+      }
+
+      .tit {
+        font-size: 508px;
+        font-weight: bold;
+        text-align: center;
+        color: #5f3bfd;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+  <h1 class="tit" align="center" col="#5f3bfd"> <span> TreasureManiaX</span></h1>
+  <h1 class="brand"><span>SIGN</span> UP</h1>
+  <!-- <div class="wrapper"> -->
+    <div class="company-info">
+
+
+    </div>
+    <div class="contact">
+      <div class="alert">Account successfully created.Move to login page to login</div>
+      <form id="contactForm">
+        <p>
+          <label>Name</label>
+          <input type="text" name="text" id="name" required>
+        </p>
+        <p>
+          <label>Email Address</label>
+          <input type="email" name="email" id="email" required>
+        </p>
+        <p>
+          <label>Password</label>
+          <input type="password" name="phone" id="password">
+        </p>
+        <p class="full">
+          <button type="submit">SIGN UP</button>
+        </p>
+      </form>
+      <p class="full">
+        <a href="#">Login</a>
+      </p>
+    <!-- </div> -->
+
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="/js/signup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Login Page</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="/css/signup.css" />
+  <style>
+    /* Custom styles */
+    body {
+      background-color: #f2f2f2;
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh 100lh;
+    }
+
+    .brand {
+      font-size: 2.5rem;
+      color: #333;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .brand span {
+      color: #7e47fc;
+    }
+
+    /* 
+    .wrapper {
+      background-color: #fff;
+      padding: 2rem;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 0.5rem;
+      width: 20rem;
+      max-width: 90%;
+    } */
+
+    .contact {
+      margin-top: 2rem;
+      margin: 10 10 10 10;
+      padding: 25px 25px 25px 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #333;
+      font-weight: bold;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.25rem;
+      margin-bottom: 1rem;
+    }
+
+    button[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 10rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      background-color: #bfc4cc;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #e1e6f0;
+    }
+
+    .full {
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    .error-message {
+      margin-top: 1rem;
+      color: #f58181;
+      font-size: 0.875rem;
+    }
+
+    .create-account {
+      display: block;
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.875rem;
+      color: #333;
+    }
+
+    .create-account:hover {
+      text-decoration: underline;
+    }
+
+    .tit {
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      color: #5f3bfd;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="tit" > <span> TreasureManiaX</span></h1>
+  <h2 class="brand" align="center"><span>Log</span>in</h2>
+  <div class="container">
+
+    <div class="contact">
+      <form id="contactForm">
+        <p>
+          <label align="center">Email Address</label>
+          <input type="email" name="email" id="email" required>
+        </p>
+        <br>
+        <p>
+          <label align="center">Password</label>
+          <input type="password" name="phone" id="password">
+        </p>
+        <br>
+        <p class="full">
+          <button type="submit">LOGIN</button>
+        </p>
+      </form>
+      <p>
+        <a href="#">Create Account</a>
+      </p>
+    </div>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="/js/index.js"></script>
+</body>
+
+</html>
